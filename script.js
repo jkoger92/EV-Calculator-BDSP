@@ -8,15 +8,15 @@ const pokerusOffBtn = document.getElementById('pokerusOff')
 let counterValue = 0
 let pokerusActive = false
 
-pokerusOffBtn.addEventListener('click', function () {
+pokerusOffBtn.addEventListener('click', () => {
   pokerusActive = false
   pokerusOnBtn.style.background = ''
 })
-pokerusOnBtn.addEventListener('click', function () {
+pokerusOnBtn.addEventListener('click', () => {
   pokerusActive = true
   pokerusOnBtn.style.backgroundColor = '#FF0000'
 })
-roseliaBtn.addEventListener('click', function (event) {
+roseliaBtn.addEventListener('click', () => {
   if (pokerusActive == false) {
     counterValue += 2
     counter.innerHTML = counterValue
@@ -26,7 +26,7 @@ roseliaBtn.addEventListener('click', function (event) {
     counter.innerHTML = counterValue
   }
 })
-budewBtn.addEventListener('click', function (event) {
+budewBtn.addEventListener('click', () => {
   if (pokerusActive == false) {
     counterValue += 1
     counter.innerHTML = counterValue
@@ -36,7 +36,7 @@ budewBtn.addEventListener('click', function (event) {
     counter.innerHTML = counterValue
   }
 })
-resetBtn.addEventListener('click', function (event) {
+resetBtn.addEventListener('click', () => {
   counterValue = 0
   counter.innerHTML = counterValue
 })
