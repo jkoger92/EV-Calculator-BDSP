@@ -1,0 +1,28 @@
+{
+  "name": "ev-calculator-bdsp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkoger92/EV-Calculator-BDSP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkoger92/EV-Calculator-BDSP/issues"
+  },
+  "homepage": "https://github.com/jkoger92/EV-Calculator-BDSP#readme",
+  "devDependencies": {
+    "git-scripts": "^0.4.3",
+    "surge": "^0.23.0"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge bdspevcalculator.surge.sh"
+    }
+  }
+}
