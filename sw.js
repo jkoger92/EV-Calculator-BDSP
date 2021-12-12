@@ -5,11 +5,11 @@ self.addEventListener('install', function (event) {
       //Static files that make up the application shell are cached
       return cache.add(
         'index.html',
-        'hp.html',
-        'attack.html',
-        'defense.html',
-        'specialDefense.html',
-        'speed.html',
+        'src/hp.html',
+        'src/attack.html',
+        'src/defense.html',
+        'src/specialDefense.html',
+        'src/speed.html',
       )
     }),
   )
