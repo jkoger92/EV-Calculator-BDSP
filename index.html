@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EV Calculator</title>
     <link href="style.css" rel="stylesheet" />
+    <meta name="theme-color" content="#4dbaa8" />
+    <link rel="manifest" href="manifest.json" />
     <script src="/js/specialAttack.js" defer></script>
+    <script>
+      //if browser support service worker
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+      }
+    </script>
   </head>
   <body>
     <div class="topnav">
